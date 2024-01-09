@@ -12,7 +12,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var secondField: UITextField!
     @IBOutlet weak var resultLabel: UILabel!
     
-    let cal = Calculator()
+    private let cal = Calculator()
 
     override func viewDidLoad() {
         super.viewDidLoad()

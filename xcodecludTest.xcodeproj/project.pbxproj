@@ -16,6 +16,7 @@
 		2DA621BD2B4D1F95007CEF54 /* xcodecludTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA621BC2B4D1F95007CEF54 /* xcodecludTestTests.swift */; };
 		2DA621C72B4D1F95007CEF54 /* xcodecludTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA621C62B4D1F95007CEF54 /* xcodecludTestUITests.swift */; };
 		2DA621C92B4D1F95007CEF54 /* xcodecludTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA621C82B4D1F95007CEF54 /* xcodecludTestUITestsLaunchTests.swift */; };
+		2DA621D62B4D2A46007CEF54 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA621D52B4D2A46007CEF54 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		2DA621C22B4D1F95007CEF54 /* xcodecludTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xcodecludTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DA621C62B4D1F95007CEF54 /* xcodecludTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xcodecludTestUITests.swift; sourceTree = "<group>"; };
 		2DA621C82B4D1F95007CEF54 /* xcodecludTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xcodecludTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2DA621D52B4D2A46007CEF54 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				2DA621A52B4D1F93007CEF54 /* AppDelegate.swift */,
 				2DA621A72B4D1F93007CEF54 /* SceneDelegate.swift */,
 				2DA621A92B4D1F93007CEF54 /* ViewController.swift */,
+				2DA621D52B4D2A46007CEF54 /* DetailViewController.swift */,
 				2DA621AB2B4D1F93007CEF54 /* Main.storyboard */,
 				2DA621AE2B4D1F95007CEF54 /* Assets.xcassets */,
 				2DA621B02B4D1F95007CEF54 /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 				2DA621AA2B4D1F93007CEF54 /* ViewController.swift in Sources */,
 				2DA621A62B4D1F93007CEF54 /* AppDelegate.swift in Sources */,
 				2DA621A82B4D1F93007CEF54 /* SceneDelegate.swift in Sources */,
+				2DA621D62B4D2A46007CEF54 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,12 +11,21 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var firstField: UITextField!
     @IBOutlet weak var secondField: UITextField!
     @IBOutlet weak var resultLabel: UILabel!
+    @IBAction func nextButton(_ sender: Any) {
+        detailVC = DetailViewController()
+        detailVC?.text = resultLabel.text
+        if let detailVC = detailVC {
+            self.navigationController?.pushViewController(detailVC, animated: true)
+        }
+    }
     
     private let cal = Calculator()
+    private var detailVC: DetailViewController? // weak를 제거하고 강한 참조로 변경
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "Calculator VC"
         firstField.delegate = self
         secondField.delegate = self
     }

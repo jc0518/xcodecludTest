@@ -12,16 +12,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var secondField: UITextField!
     @IBOutlet weak var resultLabel: UILabel!
     @IBAction func nextButton(_ sender: Any) {
-        detailVC = DetailViewController()
-        detailVC?.text = resultLabel.text
-        if let detailVC = detailVC {
-            self.navigationController?.pushViewController(detailVC, animated: true)
-        }
+        let detailVC = DetailViewController()
+        detailVC.parentVC = self  // DetailViewController에 대한 강한 참조를 생성
+        self.detailVC = detailVC  // ViewController에서 DetailViewController에 대한 강한 참조를 저장
+        self.navigationController?.pushViewController(detailVC, animated: true)
     }
     
     private let cal = Calculator()
-    private weak var detailVC: DetailViewController? // weak를 제거하고 강한 참조로 변경
-
+    var detailVC: DetailViewController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

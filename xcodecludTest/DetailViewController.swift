@@ -8,17 +8,7 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-    var text: String? {
-        didSet {
-            updateUI()
-        }
-    }
-    
-    func updateUI() {
-        label.text = text
-    }
-    
-    let label = UILabel()
+    var parentVC: ViewController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,11 +16,6 @@ class DetailViewController: UIViewController {
     
         title = "Detail VC"
         view.backgroundColor = .yellow
-        
-        label.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(label)
-        label.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        label.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     }
     
     deinit {

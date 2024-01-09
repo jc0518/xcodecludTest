@@ -20,7 +20,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     private let cal = Calculator()
-    private var detailVC: DetailViewController? // weak를 제거하고 강한 참조로 변경
+    private weak var detailVC: DetailViewController? // weak를 제거하고 강한 참조로 변경
 
     override func viewDidLoad() {
         super.viewDidLoad()
